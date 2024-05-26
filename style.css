@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Amoled black */
+    color: #fff; /* White text */
+}
+
+header {
+    background-color: #222; /* Dark gray */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.intro-box {
+    background-color: #fff; /* White */
+    color: #000; /* Black text */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro-box img {
+    width: 150px; /* Set width */
+    height: 150px; /* Set height */
+    border-radius: 10px; /* Make the image slightly rounded */
+    margin-bottom: 20px; /* Add space between image and text */
+    object-fit: cover; /* Ensure the photo covers the entire area */
+}
+
+footer {
+    background-color: #222; /* Dark gray */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Add relative positioning */
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+/* Keyframes for the animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Applying the animation to the span element */
+#animate-text {
+    display: inline-block;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+/* Centering the "Contact Me" header */
+h2 {
+    text-align: center;
+}
+
+/* Style for icon links */
+.contact-icons {
+    text-align: center;
+    margin-top: 10px; /* Adjust margin as needed */
+}
+
+.contact-icons a {
+    color: #fff; /* White icon color */
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Style for skill set */
+.skill-set {
+    margin-top: 30px;
+}
+
+.skill-box {
+    background-color: #444; /* Dark gray */
+    color: #fff;
+    padding: 15px;
+    margin: 10px auto; /* Align boxes in the center */
+    border-radius: 10px;
+    text-align: center;
+    min-width: 200px;
+    position: relative;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #333; /* Darker gray */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background-color: #00f7ff; /* Custom color for progress */
+    animation: progressAnimation 2s ease-in-out forwards; /* Animation */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000; /* Black text */
+    font-weight: bold;
+}
+
+@keyframes progressAnimation {
+    from {
+        width: 0;
+    }
+}
+
+.control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.control.left {
+    left: 0;
+    padding-left: 20px;
+}
+
+.control.right {
+    right: 0;
+    padding-right: 20px;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: #00;
+}
+
+.project-box {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.5s;
+    display: none; /* Initially hide all project boxes */
+}
+
+.project-box .para {
+    color: #000; /* Change to black or any other color that contrasts with the background */
+}
+
+
+.visible {
+    display: block; /* Display only the visible project box */
+}
+
+
+.control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.control.left {
+    left: 20px;
+}
+
+.control.right {
+    right: 20px;
+}
+
